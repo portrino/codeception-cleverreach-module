@@ -1,4 +1,6 @@
 # Codeception Cleverreach Module
+[![Build Status](https://travis-ci.org/portrino/codeception-cleverreach-module.svg?branch=master)](https://travis-ci.org/portrino/codeception-cleverreach-module)
+
 This package provides cleverreach testing for codeception
 
 # Installation
@@ -16,7 +18,7 @@ modules:
     enabled:
         - CleverReach:
             depends: PhpBrowser
-            client_id: ADD_YOUR_ClIENT_ID_HERE
+            client_id: ADD_YOUR_CLIENT_ID_HERE
             login_name: ADD_YOUR_LOGIN_NAME_HERE
             password: ADD_YOUR_PASSWORD_HERE
 ```
