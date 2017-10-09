@@ -1,0 +1,19 @@
+{
+  "name": "portrino/codeception-sitemap-module",
+  "description": "Provides cleverreach testing for codeception",
+  "authors": [
+    {
+      "name": "Leopold Engst",
+      "email": "engst@portrino.de"
+    },
+    {
+      "name": "André Wuttig",
+      "email": "wuttig@portrino.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Codeception\\Module\\": "src"
+    }
+  }
+}
