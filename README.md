@@ -16,8 +16,8 @@ modules:
     enabled:
         - CleverReach:
             depends: PhpBrowser
-            client-id: ADD_YOUR_ClIENT_ID_HERE
-            login-name: ADD_YOUR_LOGIN_NAME_HERE
+            client_id: ADD_YOUR_ClIENT_ID_HERE
+            login_name: ADD_YOUR_LOGIN_NAME_HERE
             password: ADD_YOUR_PASSWORD_HERE
 ```
 # Update Codeception build
