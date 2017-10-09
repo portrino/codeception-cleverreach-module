@@ -3,17 +3,23 @@
 namespace Codeception\Module\Service;
 
 use Codeception\Util\HttpCode;
-use GuzzleHttp;
+use GuzzleHttp\Client;
 
 /**
  * Class CleverReachService
  */
 class CleverReachService
 {
-    protected $guzzleClient;
+    /**
+     * @var Client
+     */
+    protected $client;
 
     const API_URL = 'https://rest.cleverreach.com/v2';
 
+    /**
+     * @var string
+     */
     protected $token = '';
 
     /**
@@ -21,17 +27,22 @@ class CleverReachService
      */
     protected $config = [
         'client_id',
-        'login',
+        'login_name',
         'password'
     ];
 
     /**
      * CleverReachService constructor.
+     * @param Client $client
      * @param array $config
      */
-    public function __construct($config)
+    public function __construct($config, $client = null)
     {
-        $this->guzzleClient = new GuzzleHttp\Client();
+        $this->client = $client;
+        if ($this->client === null) {
+            $this->client = new Client();
+        }
+
         $this->config = $config;
     }
 
@@ -47,7 +58,7 @@ class CleverReachService
 
         $this->createToken();
 
-        $response = $this->guzzleClient->get(
+        $response = $this->client->get(
             $url,
             [
                 'query' => [
@@ -61,6 +72,7 @@ class CleverReachService
         );
 
         $cleverreachResponse = json_decode($response->getBody(), true);
+
         if (isset($cleverreachResponse[0]['active'])) {
             $result = (boolean)$cleverreachResponse[0]['active'];
         }
@@ -70,10 +82,10 @@ class CleverReachService
     /**
      *
      */
-    public function createToken()
+    protected function createToken()
     {
         $url = self::API_URL . '/login.json';
-        $response = $this->guzzleClient->post(
+        $response = $this->client->post(
             $url,
             [
                 'json' => [
@@ -87,5 +99,13 @@ class CleverReachService
         if ($response->getStatusCode() === HttpCode::OK) {
             $this->token = json_decode($response->getBody(), true);
         }
+    }
+
+    /**
+     * @return string
+     */
+    public function getToken()
+    {
+        return $this->token;
     }
 }
