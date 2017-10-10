@@ -24,6 +24,7 @@ class CleverReachServiceTest extends TestCase
     const FIXTURE_EMAIL = 'foo@bar.de';
     const FIXTURE_GROUP_ID = '123456';
     const FIXTURE_TOKEN = 'abcdef';
+
     /**
      * @test
      */

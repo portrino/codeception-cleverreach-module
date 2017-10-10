@@ -33,14 +33,15 @@ class CleverReachService
 
     /**
      * CleverReachService constructor.
-     * @param Client $client
+     * @param Client|null $client
      * @param array $config
      */
     public function __construct($config, $client = null)
     {
-        $this->client = $client;
-        if ($this->client === null) {
+        if ($client === null) {
             $this->client = new Client();
+        } else {
+            $this->client = $client;
         }
 
         $this->config = $config;
