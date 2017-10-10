@@ -1,5 +1,7 @@
 # Codeception Cleverreach Module
-[![Build Status](https://travis-ci.org/portrino/codeception-cleverreach-module.svg?branch=master)](https://travis-ci.org/portrino/codeception-cleverreach-module)
+[![Build Status](https://travis-ci.org/portrino/codeception-cleverreach-module.svg?branch=master)](https://travis-ci.org/portrino/codeception-cleverreach-module) [![Code Climate](https://codeclimate.com/github/portrino/codeception-cleverreach-module/badges/gpa.svg)](https://codeclimate.com/github/portrino/codeception-cleverreach-module)
+                                                                                                                                                                 [![Test Coverage](https://codeclimate.com/github/portrino/codeception-cleverreach-module/badges/coverage.svg)](https://codeclimate.com/github/portrino/codeception-cleverreach-module/coverage)
+                                                                                                                                                                 [![Issue Count](https://codeclimate.com/github/portrino/codeception-cleverreach-module/badges/issue_count.svg)](https://codeclimate.com/github/portrino/codeception-cleverreach-module)
 
 This package provides cleverreach testing for codeception
 
