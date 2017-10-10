@@ -16,6 +16,11 @@ class CleverReach extends Module
     /**
      * @var array
      */
+    protected $requiredFields = ['client_id', 'login_name', 'password'];
+
+    /**
+     * @var array
+     */
     protected $config = [
         'client_id' => '',
         'login_name' => '',

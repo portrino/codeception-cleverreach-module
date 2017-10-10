@@ -7,6 +7,7 @@ use GuzzleHttp\Client;
 
 /**
  * Class CleverReachService
+ * @package Codeception\Module\Service
  */
 class CleverReachService
 {
