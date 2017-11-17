@@ -35,3 +35,12 @@ codecept build
 ```bash
 $I->seeUserIsSubscribedForNewsletter($email, $groupId);
 ```
+
+## Authors
+
+![](https://avatars0.githubusercontent.com/u/726519?s=40&v=4)
+
+* **Leopold Engst** - *Initial work, Unit Tests* - [leen2104](https://github.com/leen2104)
+* **André Wuttig** - *Concept* - [aWuttig](https://github.com/aWuttig)
+
+See also the list of [contributors](https://github.com/portrino/codeception-cleverreach-module/graphs/contributors) who participated in this project.
