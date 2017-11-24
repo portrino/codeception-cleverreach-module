@@ -3,6 +3,7 @@
                                                                                                                                                                  [![Test Coverage](https://codeclimate.com/github/portrino/codeception-cleverreach-module/badges/coverage.svg)](https://codeclimate.com/github/portrino/codeception-cleverreach-module/coverage)
                                                                                                                                                                  [![Issue Count](https://codeclimate.com/github/portrino/codeception-cleverreach-module/badges/issue_count.svg)](https://codeclimate.com/github/portrino/codeception-cleverreach-module)
 [![Latest Stable Version](https://poser.pugx.org/portrino/codeception-cleverreach-module/v/stable)](https://packagist.org/packages/portrino/codeception-cleverreach-module)
+[![Total Downloads](https://poser.pugx.org/portrino/codeception-cleverreach-module/downloads)](https://packagist.org/packages/portrino/codeception-cleverreach-module)
 
 This package provides cleverreach testing for codeception
 
